@@ -1,6 +1,6 @@
-# node-js-getting-started
+# Used node-js-getting-started and added integration with API.AI and Facebook Messenger 
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+Initially a barebones Node.js app using [Express 4](http://expressjs.com/).
 
 This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
@@ -29,6 +29,8 @@ or
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Documentation
+
+## Important to check package.json to verify NPM packages used.
 
 For more information about using Node.js on Heroku, see these Dev Center articles:
 
