@@ -1,0 +1,101 @@
+2017-03-12T08:02:27.880270+00:00 app[web.1]: TypeError: Cannot read property '214521754' of undefined
+2017-03-12T08:02:27.880271+00:00 app[web.1]:     at Request._callback (/app/index.js:80:32)
+2017-03-12T08:02:27.880272+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/request/request.js:188:22)
+2017-03-12T08:02:27.880273+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2017-03-12T08:02:27.880273+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2017-03-12T08:02:27.880274+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/request/request.js:1171:10)
+2017-03-12T08:02:27.880275+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2017-03-12T08:02:27.880275+00:00 app[web.1]:     at emitOne (events.js:90:13)
+2017-03-12T08:02:27.880277+00:00 app[web.1]:     at IncomingMessage.g (events.js:273:16)
+2017-03-12T08:02:27.880276+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/request/request.js:1091:12)
+2017-03-12T08:02:27.880278+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2017-03-12T08:02:27.966498+00:00 heroku[web.1]: Process exited with status 1
+2017-03-12T08:02:27.883184+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=69473c75-79c3-4278-8654-7dc8cc6e314d fwd="118.148.85.202" dyno=web.1 connect=1ms service=1152ms status=503 bytes=0 protocol=https
+2017-03-12T08:02:27.988545+00:00 heroku[web.1]: State changed from up to crashed
+2017-03-12T08:02:27.989658+00:00 heroku[web.1]: State changed from crashed to starting
+2017-03-12T08:02:29.202204+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-03-12T08:02:31.391903+00:00 app[web.1]: Node app is running on port 42491
+2017-03-12T08:02:32.892562+00:00 heroku[web.1]: State changed from starting to up
+2017-03-12T08:02:33.837538+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=62fedc4a-3f69-4e4d-adf8-53332d85b1e6 fwd="118.148.85.202" dyno=web.1 connect=3ms service=20ms status=200 bytes=205 protocol=https
+2017-03-12T08:02:35.397742+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=8d3f49ea-c9cf-4c56-95ae-5362a540a785 fwd="118.148.85.202" dyno=web.1 connect=0ms service=1182ms status=503 bytes=0 protocol=https
+2017-03-12T08:02:35.389327+00:00 app[web.1]: /app/index.js:80
+2017-03-12T08:02:35.389350+00:00 app[web.1]:     read_array = body["meters"]["214521754"]["MAIN"]["registers"]["UN24"]["reads"];	
+2017-03-12T08:02:35.389352+00:00 app[web.1]:                                ^
+2017-03-12T08:02:35.389353+00:00 app[web.1]: 
+2017-03-12T08:02:35.389354+00:00 app[web.1]: TypeError: Cannot read property '214521754' of undefined
+2017-03-12T08:02:35.389355+00:00 app[web.1]:     at Request._callback (/app/index.js:80:32)
+2017-03-12T08:02:35.389356+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/request/request.js:188:22)
+2017-03-12T08:02:35.389357+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2017-03-12T08:02:35.389358+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2017-03-12T08:02:35.389358+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/request/request.js:1171:10)
+2017-03-12T08:02:35.389359+00:00 app[web.1]:     at emitOne (events.js:90:13)
+2017-03-12T08:02:35.389360+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2017-03-12T08:02:35.389360+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/request/request.js:1091:12)
+2017-03-12T08:02:35.389361+00:00 app[web.1]:     at IncomingMessage.g (events.js:273:16)
+2017-03-12T08:02:35.389362+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2017-03-12T08:02:35.479936+00:00 heroku[web.1]: Process exited with status 1
+2017-03-12T08:02:35.495165+00:00 heroku[web.1]: State changed from up to crashed
+2017-03-12T08:02:41.272223+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=838d6be4-5657-478d-98c0-c5bda0a150ce fwd="118.148.85.202" dyno=web.1 connect=5000ms service= status=503 bytes= protocol=https
+2017-03-12T08:02:41.660823+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=45f371e1-f903-496f-83d1-a3d1e76276f3 fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:02:47.334639+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/20170202" host=nameless-beach-33647.herokuapp.com request_id=12d5ef18-0260-46a3-a89f-94c7ce83aaae fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:02:47.703052+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=39947e7b-991e-4366-8887-49bf5341dd0a fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:02:58.641084+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=900b047d-ac45-4e3d-b403-cb61145ef43c fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:02:59.028228+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=bce53ef0-13ed-4baa-aa54-5e780f495d1f fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:03:16.657773+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=e4847dc5-1ca5-47c9-832b-3bd1dcb10f6b fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:03:24.049247+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=f7ed91e7-54a0-4c50-b5a4-8f0d8226e098 fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:03:41.836185+00:00 heroku[web.1]: State changed from crashed to starting
+2017-03-12T08:03:42.993046+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-03-12T08:03:44.592269+00:00 heroku[web.1]: State changed from starting to up
+2017-03-12T08:03:44.464521+00:00 app[web.1]: Node app is running on port 5904
+2017-03-12T08:03:46.725617+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=74e89383-e605-4383-b46b-0fe47efe8f94 fwd="118.148.85.202" dyno=web.1 connect=0ms service=24ms status=200 bytes=212 protocol=https
+2017-03-12T08:03:51.334734+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=bb34ff18-e0fa-4c0a-b50b-de97d8f24bf7 fwd="118.148.85.202" dyno=web.1 connect=0ms service=5ms status=200 bytes=198 protocol=https
+2017-03-12T08:03:55.079147+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=ed3b39ac-a4f9-4610-8d4f-c074559e80e5 fwd="118.148.85.202" dyno=web.1 connect=0ms service=1ms status=200 bytes=200 protocol=https
+2017-03-12T08:04:00.104600+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=292af507-b9ef-4e4e-b8fb-68fd1c105337 fwd="118.148.85.202" dyno=web.1 connect=0ms service=1ms status=200 bytes=205 protocol=https
+2017-03-12T08:04:12.564055+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=c3ea3e33-d08a-4fa3-92cb-bf66434cfbfc fwd="118.148.85.202" dyno=web.1 connect=0ms service=1ms status=200 bytes=223 protocol=https
+2017-03-12T08:04:15.019713+00:00 app[web.1]: /app/index.js:80
+2017-03-12T08:04:15.019777+00:00 app[web.1]:     read_array = body["meters"]["214521754"]["MAIN"]["registers"]["UN24"]["reads"];	
+2017-03-12T08:04:15.019790+00:00 app[web.1]:                                ^
+2017-03-12T08:04:15.019804+00:00 app[web.1]: 
+2017-03-12T08:04:15.019819+00:00 app[web.1]: TypeError: Cannot read property '214521754' of undefined
+2017-03-12T08:04:15.019820+00:00 app[web.1]:     at Request._callback (/app/index.js:80:32)
+2017-03-12T08:04:15.019822+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/request/request.js:188:22)
+2017-03-12T08:04:15.019823+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2017-03-12T08:04:15.019824+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2017-03-12T08:04:15.019824+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/request/request.js:1171:10)
+2017-03-12T08:04:15.019825+00:00 app[web.1]:     at emitOne (events.js:90:13)
+2017-03-12T08:04:15.019826+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2017-03-12T08:04:15.019826+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/request/request.js:1091:12)
+2017-03-12T08:04:15.019827+00:00 app[web.1]:     at IncomingMessage.g (events.js:273:16)
+2017-03-12T08:04:15.019841+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2017-03-12T08:04:15.025093+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=3cbb1c4c-4c4c-4925-b120-ffedf35b3a91 fwd="118.148.85.202" dyno=web.1 connect=0ms service=2071ms status=503 bytes=0 protocol=https
+2017-03-12T08:04:15.121701+00:00 heroku[web.1]: Process exited with status 1
+2017-03-12T08:04:15.129916+00:00 heroku[web.1]: State changed from up to crashed
+2017-03-12T08:04:22.419341+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=695d5b0e-1614-4d5e-bd0b-47356bb3d0f7 fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:04:23.328206+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=d2f15e13-b15d-454f-b9ca-76272d47d9d1 fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:04:29.128538+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=b25c3c86-c712-4b00-86b1-189285fff19a fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:04:29.462943+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=bba8b6c4-e21d-4d47-b786-e4fbf4e1767b fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:04:34.804872+00:00 heroku[web.1]: State changed from crashed to starting
+2017-03-12T08:04:35.993958+00:00 heroku[web.1]: Starting process with command `node index.js`
+2017-03-12T08:04:37.970150+00:00 app[web.1]: Node app is running on port 58424
+2017-03-12T08:04:39.653640+00:00 heroku[web.1]: State changed from starting to up
+2017-03-12T08:04:40.732762+00:00 heroku[router]: at=info method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=ad4c1c43-7360-4082-b80e-3a6b86aa8409 fwd="118.148.85.202" dyno=web.1 connect=0ms service=15ms status=200 bytes=212 protocol=https
+2017-03-12T08:04:42.340659+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=75d8f924-6e0f-4d96-914b-4dc6a3538041 fwd="118.148.85.202" dyno=web.1 connect=1ms service=1233ms status=503 bytes=0 protocol=https
+2017-03-12T08:04:42.313838+00:00 app[web.1]: /app/index.js:80
+2017-03-12T08:04:42.313855+00:00 app[web.1]:     read_array = body["meters"]["214521754"]["MAIN"]["registers"]["UN24"]["reads"];	
+2017-03-12T08:04:42.313857+00:00 app[web.1]:                                ^
+2017-03-12T08:04:42.313858+00:00 app[web.1]: 
+2017-03-12T08:04:42.313859+00:00 app[web.1]: TypeError: Cannot read property '214521754' of undefined
+2017-03-12T08:04:42.313859+00:00 app[web.1]:     at Request._callback (/app/index.js:80:32)
+2017-03-12T08:04:42.313860+00:00 app[web.1]:     at Request.self.callback (/app/node_modules/request/request.js:188:22)
+2017-03-12T08:04:42.313861+00:00 app[web.1]:     at emitTwo (events.js:100:13)
+2017-03-12T08:04:42.313861+00:00 app[web.1]:     at Request.emit (events.js:185:7)
+2017-03-12T08:04:42.313862+00:00 app[web.1]:     at Request.<anonymous> (/app/node_modules/request/request.js:1171:10)
+2017-03-12T08:04:42.313862+00:00 app[web.1]:     at emitOne (events.js:90:13)
+2017-03-12T08:04:42.313863+00:00 app[web.1]:     at Request.emit (events.js:182:7)
+2017-03-12T08:04:42.313864+00:00 app[web.1]:     at IncomingMessage.<anonymous> (/app/node_modules/request/request.js:1091:12)
+2017-03-12T08:04:42.313864+00:00 app[web.1]:     at IncomingMessage.g (events.js:273:16)
+2017-03-12T08:04:42.313865+00:00 app[web.1]:     at emitNone (events.js:85:20)
+2017-03-12T08:04:42.384580+00:00 heroku[web.1]: State changed from up to crashed
+2017-03-12T08:04:42.376603+00:00 heroku[web.1]: Process exited with status 1
+2017-03-12T08:04:44.660047+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/cool" host=nameless-beach-33647.herokuapp.com request_id=4b164f29-20f8-4f22-b9bc-ad5e6fd6c2e0 fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
+2017-03-12T08:04:45.024887+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=nameless-beach-33647.herokuapp.com request_id=c47cce0c-8e0e-44a5-b198-aa627aa2b05d fwd="118.148.85.202" dyno= connect= service= status=503 bytes= protocol=https
