@@ -416,8 +416,8 @@ app.get('/:date', function(request, response) {
 	var request = require('request');
 	
 	
-	var username = 'arielreyes'
-	var password = 'jR8xM098YX'
+	var username = ''
+	var password = ''
 	
 	var options = {
 		headers: {"content-type": "application/json"},
