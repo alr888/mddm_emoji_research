@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 
 app.set('port', (process.env.PORT || 5000));
 
+//Meter read request function
 app.post('/hook', function (req, res) {
     console.log('hook request');
 	var moment = require('moment');
@@ -338,6 +339,8 @@ var j = schedule.scheduleJob(rule, function(){
 
 
 });
+
+//Electricity market spot prices function
 
 app.get('/cheerio', function(request, response) {
  let axios = require('axios');
